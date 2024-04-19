@@ -1,6 +1,6 @@
 //Maya ASCII 2024 scene
-//Name: Unit_7_Lab_Model.ma
-//Last modified: Thu, Apr 18, 2024 10:00:36 PM
+//Name: Unit11_Lab_Model.ma
+//Last modified: Thu, Apr 18, 2024 10:02:14 PM
 //Codeset: 1252
 requires maya "2024";
 requires -nodeType "HIKSkeletonGeneratorNode" -dataType "HIKCharacter" -dataType "HIKCharacterState"
@@ -16,7 +16,7 @@ fileInfo "product" "Maya 2024";
 fileInfo "version" "2024";
 fileInfo "cutIdentifier" "202310181224-69282f2959";
 fileInfo "osv" "Windows 11 Home v2009 (Build: 22631)";
-fileInfo "UUID" "40E612B4-48A2-FB68-A58A-3CA08F48C9E9";
+fileInfo "UUID" "413F8917-40B1-D775-3F33-A6B73F8C7300";
 createNode transform -s -n "persp";
 	rename -uid "A8A4A98B-42C7-9DF7-2AC6-199191713A25";
 	setAttr ".v" no;
@@ -13242,20 +13242,20 @@ createNode camera -n "cameraShape1" -p "camera1";
 	setAttr ".man" -type "string" "camera1_mask";
 	setAttr ".dr" yes;
 createNode lightLinker -s -n "lightLinker1";
-	rename -uid "A0676C26-4F30-1332-D7F2-9BB6479BE24F";
+	rename -uid "2D5F8D0A-4C72-A1CC-C9E9-4DB553250514";
 	setAttr -s 26 ".lnk";
 	setAttr -s 26 ".slnk";
 createNode shapeEditorManager -n "shapeEditorManager";
-	rename -uid "D58980B6-4FBE-5C85-16AA-DDBD1C027187";
+	rename -uid "E750CF37-459C-D642-B34D-0991D2E65491";
 createNode poseInterpolatorManager -n "poseInterpolatorManager";
-	rename -uid "E5F6CC92-46FF-911F-9FF4-56BDAC51A874";
+	rename -uid "937252AC-43B1-B375-0A2C-50AE542DB147";
 createNode displayLayerManager -n "layerManager";
-	rename -uid "D027C7C1-4413-B7EA-21E0-678AD52316A2";
+	rename -uid "DFFD3780-48D9-35EF-6337-CABC5A5838D6";
 createNode displayLayer -n "defaultLayer";
 	rename -uid "71E49BB7-4B50-D235-2A3D-64ADBEC4D57F";
 	setAttr ".ufem" -type "stringArray" 0  ;
 createNode renderLayerManager -n "renderLayerManager";
-	rename -uid "84F94947-4515-2596-0061-75A29C5255F4";
+	rename -uid "44757D83-4664-E35F-31EB-69B793E9F05E";
 createNode renderLayer -n "defaultRenderLayer";
 	rename -uid "DBD8C8E9-4B7B-512C-45C4-C8B56B9FC848";
 	setAttr ".g" yes;
@@ -15485,7 +15485,6 @@ createNode place2dTexture -n "place2dTexture13";
 	rename -uid "9FA5EDDA-4B9E-6745-B00D-C78E48C0DC01";
 createNode bump2d -n "bump2d3";
 	rename -uid "D6CAEEB9-47F8-B44A-8673-2BA652721FEF";
-	setAttr ".vc1" -type "float3" 0 9.9999997e-06 0 ;
 	setAttr ".vc2" -type "float3" 9.9999997e-06 9.9999997e-06 0 ;
 createNode shadingEngine -n "aiStandardSurface4SG";
 	rename -uid "35F0FDEF-40B4-AB39-69BD-D2AD11A5C345";
@@ -15928,7 +15927,7 @@ createNode animCurveTU -n "polySurface1_visibility";
 	setAttr ".wgt" no;
 	setAttr ".ktv[0]"  1 1;
 createNode mayaUsdLayerManager -n "mayaUsdLayerManager1";
-	rename -uid "184979D0-49AE-B4E2-6234-EE8E7F45FF48";
+	rename -uid "40DF7714-4530-DA10-99D0-39B1042BE4B2";
 	setAttr ".sst" -type "string" "";
 select -ne :time1;
 	setAttr ".o" 10;
@@ -17595,4 +17594,4 @@ connectAttr "groupId81.msg" ":initialShadingGroup.gn" -na;
 connectAttr "groupId83.msg" ":initialShadingGroup.gn" -na;
 connectAttr "directionalLight1.iog" ":defaultLightSet.dsm" -na;
 connectAttr "aiSkyDomeLight1.iog" ":defaultLightSet.dsm" -na;
-// End of Unit_7_Lab_Model.ma
+// End of Unit11_Lab_Model.ma
